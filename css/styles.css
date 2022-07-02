@@ -7,6 +7,7 @@
 /* вторичный цвет фона #F5F4FA */
 /* основной цвет фона #FFFFFF */
 /* цвет фона героя и футера #2F303A */
+/* цвет нижней рамки хедера #ECECEC */
 
 :root {
   --primary-text-color: #757575;
@@ -17,6 +18,7 @@
   --logo-black-color: #000000;
   --bgc-header-color: #2f303a;
   --address-footer-color: rgba(255, 255, 255, 0.6);
+  --border-header-color: #ececec;
 }
 
 body {
@@ -26,7 +28,14 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-.list {
+.list,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -36,7 +45,14 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  height: 80px;
+  padding-right: 15px;
+  padding-right: 15px;
+}
+
+.container.header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-header-color);
 }
 
 /* Logo header */
@@ -110,7 +126,7 @@ body {
 
 .hero-title {
   color: var(--main-white-color);
-  background-color: tomato;
+
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -118,8 +134,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  margin-top: 0;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .button.order {
@@ -141,9 +156,15 @@ body {
 
 .hide {
   visibility: hidden;
+  font-size: 0;
 }
 
 /* Advantages */
+
+.section {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
 
 .section-title {
   color: var(--title-text-color);
@@ -158,18 +179,31 @@ body {
 
 .advantages .title {
   color: var(--title-text-color);
-
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+
+  margin-bottom: 10px;
+}
+
+.container.work .section-title,
+.container.cooperators .section-title {
+  padding-bottom: 50px;
 }
 
 /* Team */
+.section.team {
+  margin-bottom: 0;
+}
 .team {
   background-color: var(--btn-grey-color);
+}
+
+.container.cooperators .section-title {
+  padding-top: 94px;
 }
 
 .cooperators .cooperator {
@@ -180,6 +214,9 @@ body {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .cooperators .post {
@@ -188,6 +225,8 @@ body {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+
+  padding-bottom: 30px;
 }
 
 /* Footer */
@@ -271,20 +310,26 @@ body {
 }
 
 /* Меню работ */
+.menu.list {
+  padding-bottom: 50px;
+}
 
 .button .portfoio.current-btn {
   background-color: var(--accent-color);
 }
+
 .menu .button:hover,
 .menu .button:focus {
   color: var(--main-white-color);
   background-color: var(--accent-color);
 }
+
 /* Примеры работ */
 
 .list .link {
   text-decoration: none;
 }
+
 .list-title {
   color: var(--title-text-color);
 
