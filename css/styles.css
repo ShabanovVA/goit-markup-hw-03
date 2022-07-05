@@ -243,6 +243,7 @@ nav {
 .work.list {
   display: flex;
 }
+
 .work.list .item.item:not(:last-child) {
   margin-right: 30px;
 }
@@ -263,6 +264,11 @@ nav {
   display: flex;
 }
 
+.cooperators .list .item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .cooperators.list .item:not(:last-child) {
   margin-right: 30px;
 }
@@ -413,7 +419,9 @@ nav {
 
 .works .item {
   width: 370px;
-  border: 1px solid var(--border-works-color);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-works-color);
 }
 
 .works .item:not(:nth-child(3n)) {
@@ -428,16 +436,20 @@ nav {
 }
 
 .list-title {
+  margin: 20px 0 4px 24px;
+
   color: var(--title-text-color);
 
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 2px;
+  line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .list .name {
+  margin-left: 24px;
+
   color: var(--primary-text-color);
 
   font-style: normal;
