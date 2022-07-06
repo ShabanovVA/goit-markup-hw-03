@@ -68,6 +68,8 @@ nav {
 /* Logotip header */
 .studio-header {
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 
   color: var(--logo-black-color);
 
@@ -157,14 +159,19 @@ nav {
 }
 
 /* Hero */
-.hero {
+section.hero {
   background-color: var(--bgc-header-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.container.hero {
+  width: 696px;
 }
 
 .hero-title {
   color: var(--main-white-color);
-
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -199,12 +206,9 @@ nav {
 
 /* Advantages */
 
-.section {
-  padding-bottom: 94px;
-}
-
 .section.advantages {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .section-title {
@@ -240,8 +244,26 @@ nav {
 
   margin-bottom: 10px;
 }
+
+.advantages .desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.section.work {
+  padding-bottom: 94px;
+}
+
 .work.list {
   display: flex;
+}
+.work.list img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .work.list .item.item:not(:last-child) {
@@ -249,20 +271,28 @@ nav {
 }
 .container.work .section-title,
 .container.cooperators .section-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /* Team */
 
-.team {
+.section.team {
   background-color: var(--btn-grey-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .cooperators.list {
   display: flex;
 }
+.cooperators.list img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .cooperators .list .item {
+  background-color: var(--main-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -270,7 +300,10 @@ nav {
 .cooperators.list .item:not(:last-child) {
   margin-right: 30px;
 }
-
+.section.team .desc {
+  padding: 30px 0;
+  text-align: center;
+}
 .cooperators .cooperator {
   color: var(--title-text-color);
 
@@ -279,9 +312,7 @@ nav {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
-
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .cooperators .post {
@@ -290,25 +321,22 @@ nav {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
-
-  padding-bottom: 30px;
 }
 
 /* Footer */
 
-.footer {
+.section.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--bgc-header-color);
 }
 
 .container.footer {
   display: block;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
-.logo-footer {
-  padding-bottom: 20px;
-}
+
 .studio-footer {
+  display: block;
   color: var(--main-white-color);
 
   font-family: Raleway, sans-serif;
@@ -317,6 +345,7 @@ nav {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  margin-bottom: 20px;
 }
 
 .address {
@@ -334,7 +363,7 @@ nav {
 }
 
 .address.list .item.item:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .address-mail,
 .address-tel {
@@ -385,13 +414,16 @@ nav {
 }
 
 /* Стили Портфолио */
+.section.portfoio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /* Меню работ */
 .menu-portfolio.list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .menu-portfolio .item.item:not(:last-child) {
@@ -400,6 +432,10 @@ nav {
 
 .button .portfoio.current-btn {
   background-color: var(--accent-color);
+}
+
+.menu-portfolio .button {
+  padding: 6px 22px;
 }
 
 .menu-portfolio .button:hover,
@@ -417,9 +453,6 @@ nav {
 
 .works .item {
   width: 370px;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--border-works-color);
 }
 
 .works .item:not(:nth-child(3n)) {
@@ -433,8 +466,23 @@ nav {
   text-decoration: none;
 }
 
+.works.list img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.works.list .desc {
+  display: block;
+  padding: 20px 24px;
+
+  border-width: 0 1px 1px;
+  border-style: solid;
+  border-color: var(--border-works-color);
+}
+
 .list-title {
-  margin: 20px 0 4px 24px;
+  margin-bottom: 4px;
 
   color: var(--title-text-color);
 
@@ -446,8 +494,6 @@ nav {
 }
 
 .list .name {
-  margin-left: 24px;
-
   color: var(--primary-text-color);
 
   font-style: normal;

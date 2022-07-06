@@ -41,12 +41,11 @@
     </header>
     <main>
       <!-- Герой -->
-      <section class="hero">
-        <h1 class="hero-title">
-          Эффективные решения <br />
-          для вашего бизнеса
-        </h1>
-        <button type="button" class="button order primary">Заказать услугу</button>
+      <section class="section hero">
+        <div class="container hero">
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="button order primary">Заказать услугу</button>
+        </div>
       </section>
       <!-- Особенности работы -->
       <section class="section advantages">
@@ -56,31 +55,33 @@
           <ul class="advantages list">
             <li class="item">
               <h3 class="title">Внимание к деталям</h3>
-              <p>
+              <p class="desc">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
             <li class="item">
               <h3 class="title">Пунктуальность</h3>
-              <p>
+              <p class="desc">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
             <li class="item">
               <h3 class="title">Планирование</h3>
-              <p>
+              <p class="desc">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
             <li class="item">
               <h3 class="title">Современные технологии</h3>
-              <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+              <p class="desc">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
             </li>
           </ul>
         </div>
       </section>
       <!-- Чем занимаются -->
-      <section class="section">
+      <section class="section work">
         <div class="container work">
           <h2 class="section-title">Чем мы занимаемся</h2>
 
@@ -105,23 +106,31 @@
           <ul class="cooperators list">
             <li class="item">
               <img src="./images/PD.jpg" alt="Product Designer" width="270" />
-              <h3 class="cooperator">Игорь Демьяненко</h3>
-              <p lang="en" class="post">Product Designer</p>
+              <div class="desc">
+                <h3 class="cooperator">Игорь Демьяненко</h3>
+                <p lang="en" class="post">Product Designer</p>
+              </div>
             </li>
             <li class="item">
               <img src="./images/FD.jpg" alt="Frontend Developer" width="270" />
-              <h3 class="cooperator">Ольга Репина</h3>
-              <p lang="en" class="post">Frontend Developer</p>
+              <div class="desc">
+                <h3 class="cooperator">Ольга Репина</h3>
+                <p lang="en" class="post">Frontend Developer</p>
+              </div>
             </li>
             <li class="item">
               <img src="./images/M.jpg" alt="Marketing" width="270" />
-              <h3 class="cooperator">Николай Тарасов</h3>
-              <p lang="en" class="post">Marketing</p>
+              <div class="desc">
+                <h3 class="cooperator">Николай Тарасов</h3>
+                <p lang="en" class="post">Marketing</p>
+              </div>
             </li>
             <li class="item">
               <img src="./images/UID.jpg" alt="UI Designer" width="270" />
-              <h3 class="cooperator">Михаил Ермаков</h3>
-              <p lang="en" class="post">UI Designer</p>
+              <div class="desc">
+                <h3 class="cooperator">Михаил Ермаков</h3>
+                <p lang="en" class="post">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -129,13 +138,11 @@
     </main>
     <!-- Футер -->
 
-    <footer class="footer">
+    <footer class="section footer">
       <div class="container footer">
-        <div class="logo-footer">
-          <a lang="en" href="./index.html" class="studio-footer"
-            ><span class="web">Web</span>Studio</a
-          >
-        </div>
+        <a lang="en" href="./index.html" class="studio-footer"
+          ><span class="web">Web</span>Studio</a
+        >
         <address>
           <ul class="address list">
             <li class="item">г. Киев, пр-т Леси Украинки, 26</li>
