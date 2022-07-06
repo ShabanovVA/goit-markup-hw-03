@@ -253,9 +253,7 @@ nav {
 }
 
 /* Team */
-.section.team {
-  margin-bottom: 0;
-}
+
 .team {
   background-color: var(--btn-grey-color);
 }
