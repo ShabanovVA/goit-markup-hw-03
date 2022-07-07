@@ -54,13 +54,15 @@ p {
 }
 
 /* Header */
-.container.header {
-  display: flex;
-  align-items: center;
-
+header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: var(--border-header-color);
+}
+
+.container.header {
+  display: flex;
+  align-items: center;
 }
 
 nav {
@@ -181,7 +183,7 @@ section.hero {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .button.order {
@@ -424,7 +426,8 @@ section.hero {
   margin-right: 8px;
 }
 
-.button .portfoio.current-btn {
+.portfoio .current-btn {
+  color: var(--main-white-color);
   background-color: var(--accent-color);
 }
 
