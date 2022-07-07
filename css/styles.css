@@ -21,6 +21,7 @@
   --address-footer-color: rgba(255, 255, 255, 0.6);
   --border-header-color: #ececec;
   --border-works-color: #eeeeee;
+  --btn-hero-color: #188ce8;
 }
 
 body {
@@ -110,7 +111,6 @@ nav {
 
   color: var(--title-text-color);
 
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -145,7 +145,6 @@ nav {
 
   color: var(--primary-text-color);
 
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -172,7 +171,7 @@ section.hero {
 
 .hero-title {
   color: var(--main-white-color);
-  font-style: normal;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -183,7 +182,6 @@ section.hero {
 }
 
 .button.order {
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -196,7 +194,7 @@ section.hero {
 .button.order:hover,
 .button.order:focus {
   color: var(--title-text-color);
-  background-color: var(--btn-grey-color);
+  background-color: var(--btn-hero-color);
 }
 
 .section-title.hide {
@@ -214,7 +212,6 @@ section.hero {
 .section-title {
   color: var(--title-text-color);
 
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -235,7 +232,7 @@ section.hero {
 
 .advantages .title {
   color: var(--title-text-color);
-  font-style: normal;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -246,7 +243,6 @@ section.hero {
 }
 
 .advantages .desc {
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -307,7 +303,6 @@ section.hero {
 .cooperators .cooperator {
   color: var(--title-text-color);
 
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
@@ -316,7 +311,6 @@ section.hero {
 }
 
 .cooperators .post {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
@@ -340,7 +334,6 @@ section.hero {
   color: var(--main-white-color);
 
   font-family: Raleway, sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -369,7 +362,6 @@ section.hero {
 .address-tel {
   color: var(--address-footer-color);
 
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -391,7 +383,6 @@ section.hero {
 
   cursor: pointer;
   font-family: inherit;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -486,7 +477,6 @@ section.hero {
 
   color: var(--title-text-color);
 
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -496,7 +486,6 @@ section.hero {
 .list .name {
   color: var(--primary-text-color);
 
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
