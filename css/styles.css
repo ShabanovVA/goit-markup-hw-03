@@ -22,6 +22,7 @@
   --border-header-color: #ececec;
   --border-works-color: #eeeeee;
   --btn-hero-color: #188ce8;
+  --logo-color: aqua;
 }
 
 body {
@@ -85,14 +86,16 @@ nav {
 .web {
   color: var(--accent-color);
 }
-/* Ховер и фокус работают криво. Что подправить? */
+
 .studio-header:hover,
 .studio-header:focus,
 .studio-footer:hover,
 .studio-footer:focus,
-.web:hover,
-.web:focus {
-  color: var(--logo-black-color);
+.studio-header:hover .web,
+.studio-header:focus .web,
+.studio-footer:hover .web,
+.studio-footer:focus .web {
+  color: var(--accent-color);
 }
 
 /* Site nav */
@@ -443,7 +446,7 @@ section.hero {
 }
 
 .works .item {
-  width: 370px;
+  width: calc((100% - 2 * 30px) / 3);
 }
 
 .works .item:not(:nth-child(3n)) {
