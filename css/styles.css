@@ -193,7 +193,7 @@ section.hero {
 
 .button.order:hover,
 .button.order:focus {
-  color: var(--title-text-color);
+  color: var(--main-white-color);
   background-color: var(--btn-hero-color);
 }
 
